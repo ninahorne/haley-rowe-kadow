@@ -5,4 +5,4 @@ permalink: /
 section: home
 intro_paragraph: ""
 ---
-![hrk banner]( "banner")
+![]()
