@@ -5,4 +5,3 @@ permalink: /
 section: home
 intro_paragraph: ""
 ---
-![]()
