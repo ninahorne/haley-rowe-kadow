@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Welcome
+title: Home
 permalink: /
 section: home
 intro_paragraph: ""
 ---
-![hrk banner](/assets/img/uploads/home-page-banner.png "banner")
+![hrk banner]( "banner")
