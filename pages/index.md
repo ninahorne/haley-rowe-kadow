@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: Haley Rowe-Kadow
 permalink: /
 section: home
 intro_paragraph: ""
