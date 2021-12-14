@@ -5,16 +5,17 @@ layout: default
 <div class="container">
   {% include page-intro.html %} {{ content }}
 
-  <section class="blog__grid">
-    <div>
-      {% for category in site.categories %}
-        <h1><a name="{{ category | first }}">{{ category | first }}</a></h1>
-        <ul>
-          {% for portfolio_item in category.last %}
-          <li><a href="{{ portfolio_item.url }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-      {% endfor %}
+  <section class="portfolio__grid">
+    {% for post in site.posts %} {% if post.categories contains 'food_styling'
+    %}
+    <div class="post">
+      <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="meta">Date: {{ post.date }}</p>
+      <div class="entry">
+        {{ post.content | strip_html | truncatewords: 100 }}
+      </div>
     </div>
+    {% endif %} 
+    {% endfor %}
   </section>
 </div>

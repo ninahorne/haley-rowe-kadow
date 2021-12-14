@@ -6,5 +6,5 @@ meta_description: "Portfolio for Haley Rowe-Kadow - a food and travel writer and
 permalink: /portfolio
 section: portfolio
 intro_paragraph: |-
-  Self-published portfolio
+    Lorem ipsum
 ---
