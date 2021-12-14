@@ -51,7 +51,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Portfolio Item"
     folder: "portfolio_items"
     sort: "title:asc"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
