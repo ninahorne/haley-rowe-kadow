@@ -3,6 +3,8 @@
 
 - text: About
   url: /
+- text: Portfolio
+  url: /portfolio
 - text: Contact
   url: /contact
 - text: Blog

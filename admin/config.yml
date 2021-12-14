@@ -46,3 +46,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "richtext", required: false}
       - {label: "Body", name: "body", widget: "richtext", required: false}
+    # Portfolio Item
+  - name: "portfolio_item"
+    label: "Portfolio Item"
+    folder: "portfolio_items"
+    sort: "title:asc"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "link", name: "link", widget: "url"}
