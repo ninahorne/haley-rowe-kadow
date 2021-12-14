@@ -5,16 +5,14 @@ layout: default
 <div class="container">
   <div class="two-column-grid">
     <div>
-      <h2>{{ page.title }}</h2>
+      <!-- <h2>{{ page.title }}</h2> -->
       <img src="/assets/img/uploads/headshot.png">
     </div>
-    <div>
-      {{page.intro-paragraph}}
+    <div class="home__intro">
+      <p>
+        {{page.intro_paragraph}}
+      </p>
     </div>
   </div>
   {{ content }}
-
-  <section>
-    <h3>Recent posts from the blog</h3>
-  </section>
 </div>

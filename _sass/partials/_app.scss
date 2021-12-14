@@ -62,3 +62,13 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/** HOME PAGE **/
+.home__intro{
+  @include center-vertically();
+  padding: 3rem;
+  p {
+    font-size: 1.6rem;
+  }
+
+}

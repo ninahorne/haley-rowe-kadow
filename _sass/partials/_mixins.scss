@@ -22,3 +22,9 @@
   max-width: $container-width;
   margin: 0 auto;
 }
+
+@mixin center-vertically(){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

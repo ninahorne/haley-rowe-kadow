@@ -648,6 +648,17 @@ header nav ul li a:visited {
   grid-template-columns: 1fr 1fr;
 }
 
+/** HOME PAGE **/
+.home__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+.home__intro p {
+  font-size: 1.6rem;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
