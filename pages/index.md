@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Haley Rowe-Kadow
+title: Home
 meta_description: "Haley Rowe-Kadow is a food and travel writer and content
   creator living in Brooklyn, NY. "
 permalink: /
