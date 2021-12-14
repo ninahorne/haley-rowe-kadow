@@ -44,8 +44,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Meta Description", name: "meta_description", widget: "string", required: false}
       - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "richText", required: false}
-      - {label: "Body", name: "body", widget: "richText", required: false}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
     # Portfolio Item
   - name: "portfolio_item"
     label: "Portfolio Item"
