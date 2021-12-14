@@ -9,15 +9,12 @@ html {
   font-size: 10px;
 }
 
-// header, the first grid row
-// it is also a grid for the logo and nav
-header {
-  display: flex;
-}
 
 header {
+  display: flex;
+  padding: 0rem 1.5rem;
   height: 10rem;
-  h1{
+  h1 {
     padding-bottom: 0;
   }
   & > div {
@@ -52,23 +49,61 @@ header {
   }
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.two-column-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 /** HOME PAGE **/
-.home__intro{
-  @include center-vertically();
-  padding: 3rem;
-  p {
-    font-size: 1.6rem;
-  }
+.home__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 200px);
+  align-items: center;
 
+
+  @media screen and (max-width: $screen-sm-min) {
+    grid-template-columns: 1fr;
+  }
+  img {
+    height: 500px;
+    width: auto;
+    margin: 0 auto;
+  }
+  .home__intro {
+    @include center-vertically();
+    padding: 3rem;
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+
+/** FOOTER **/
+footer {
+  @include center-vertically();
+
+  width: 100vw;
+  height: 10rem;
+  color: black;
+
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .social__icon {
+      margin: 1rem 0.5rem;
+      border-radius: 100px;
+      border: 2px solid black;
+      padding: 1rem;
+      img {
+        height: 20px;
+      }
+
+    }
+  }
 }
