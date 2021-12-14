@@ -1,8 +1,7 @@
 ---
 layout: home
-title: Welcome
+title: Haley Rowe-Kadow
 permalink: /
 section: home
 intro_paragraph: ""
 ---
-![hrk banner](/assets/img/uploads/home-page-banner.png "banner")

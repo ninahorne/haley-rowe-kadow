@@ -9,3 +9,7 @@
   "partials/typography",
   "partials/app"
 ;
+
+.container{
+  @include container();
+}
