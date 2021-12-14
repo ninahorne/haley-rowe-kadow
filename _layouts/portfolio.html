@@ -3,5 +3,18 @@ layout: default
 ---
 
 <div class="container">
-<h1>portfolio</h1>
+  {% include page-intro.html %} {{ content }}
+
+  <section class="blog__grid">
+    <div>
+      {% for category in site.categories %}
+        <h1><a name="{{ category | first }}">{{ category | first }}</a></h1>
+        <ul>
+          {% for portfolio_item in category.last %}
+          <li><a href="{{ portfolio_item.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </section>
 </div>

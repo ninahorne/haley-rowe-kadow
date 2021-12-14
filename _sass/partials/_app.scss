@@ -9,7 +9,6 @@ html {
   font-size: 10px;
 }
 
-
 header {
   display: flex;
   padding: 0rem 1.5rem;
@@ -55,15 +54,12 @@ header {
   align-items: center;
 }
 
-
-
 /** HOME PAGE **/
 .home__row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: calc(100vh - 200px);
   align-items: center;
-
 
   @media screen and (max-width: $screen-sm-min) {
     grid-template-columns: 1fr;
@@ -82,6 +78,31 @@ header {
   }
 }
 
+/** BLOG */
+.blog__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  > div {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    &:hover{
+      transform: scale(1.01);
+      transition: transform 0.3s ease-in-out;
+    }
+    a {
+      @include unformatted-link();
+      color: black;
+    }
+    img {
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
 
 /** FOOTER **/
 footer {
@@ -103,7 +124,6 @@ footer {
       img {
         height: 20px;
       }
-
     }
   }
 }
