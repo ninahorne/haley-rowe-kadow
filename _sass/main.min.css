@@ -704,6 +704,39 @@ header nav ul li a:visited {
   object-position: center;
 }
 
+.blog__image {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  margin: 2rem 0;
+}
+
+.adjacent-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.adjacent-posts .adjacent-posts__prev, .adjacent-posts .adjacent-posts__next {
+  text-decoration: none;
+  border: none;
+}
+.adjacent-posts .adjacent-posts__prev:hover, .adjacent-posts .adjacent-posts__next:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.adjacent-posts .adjacent-posts__prev:visited, .adjacent-posts .adjacent-posts__next:visited {
+  border: none;
+}
+.adjacent-posts .adjacent-posts__prev:visited:hover, .adjacent-posts .adjacent-posts__next:visited:hover {
+  color: inherit;
+}
+.adjacent-posts .adjacent-posts__prev {
+  grid: 1/1;
+}
+.adjacent-posts .adjacent-posts__next {
+  grid: 2/1;
+  text-align: right;
+}
+
 /** FOOTER **/
 footer {
   display: flex;

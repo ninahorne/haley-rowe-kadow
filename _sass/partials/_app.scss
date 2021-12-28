@@ -104,6 +104,28 @@ header {
   }
 }
 
+.blog__image{
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  margin: 2rem 0;
+}
+
+.adjacent-posts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .adjacent-posts__prev,  .adjacent-posts__next {
+    @include unformatted-link();
+  }
+  .adjacent-posts__prev{
+    grid: 1 / 1;
+  }
+  .adjacent-posts__next{
+    grid: 2 / 1;
+    text-align: right;
+  }
+}
+
 /** FOOTER **/
 footer {
   @include center-vertically();

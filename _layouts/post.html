@@ -14,21 +14,22 @@ layout: default
     </small>
   </time>
 
+  <img class="blog__image" src="{{page.main_image}}" />
   {% include page-intro.html %} {{ content }}
 
   <nav aria-label="Adjacent Posts">
-    <ul>
+    <div class="adjacent-posts">
       {% if page.previous.url %}
-      <li>
-        <a href="{{page.previous.url}}" rel="prev"
-          >&laquo; {{page.previous.title}}</a
-        >
-      </li>
+
+      <a class="adjacent-posts__prev" href="{{page.previous.url}}" rel="prev"
+        >&laquo; {{page.previous.title}}</a
+      >
+
       {% endif %} {% if page.next.url %}
-      <li>
-        <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
-      </li>
+
+      <a class="adjacent-posts__next" href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
+
       {% endif %}
-    </ul>
+    </div>
   </nav>
 </div>
