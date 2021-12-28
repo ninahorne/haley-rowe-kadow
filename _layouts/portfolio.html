@@ -8,7 +8,7 @@ layout: default
   <section class="portfolio__grid">
     {% for portfolio_item in site.pages %} {% if portfolio_item.layout ==
     'portfolio_item' %}
-    <a target="_blank" href="{{portfolio_item.link}}">
+    <a href="{{portfolio_item.url}}">
       <article class="item">
         <h2>{{portfolio_item.title}}</h2>
         <p>{{portfolio_item.categories}}</p>
