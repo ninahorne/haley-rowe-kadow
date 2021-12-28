@@ -531,7 +531,7 @@ p + h1, figure + h1, p + h2, figure + h2, p + h3, figure + h3, p + h4, figure + 
 }
 
 p.intro {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #8e8e8e;
   padding-bottom: 4rem;
 }
@@ -611,6 +611,14 @@ header > div {
   align-items: center;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  header > div {
+    grid-template-columns: 1fr;
+  }
+  header > div h1 {
+    text-align: center;
+  }
+}
 header nav ul {
   float: right;
   display: flex;
@@ -671,6 +679,11 @@ header nav ul li a:visited {
 .blog__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 768px) {
+  .blog__grid {
+    grid-template-columns: 1fr;
+  }
 }
 .blog__grid > div {
   margin: 1rem;
@@ -756,6 +769,8 @@ footer .footer__social .social__icon {
   border-radius: 100px;
   border: 2px solid black;
   padding: 1rem;
+  height: 45px;
+  width: 45px;
 }
 footer .footer__social .social__icon img {
   height: 20px;
