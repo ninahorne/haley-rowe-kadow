@@ -3,18 +3,18 @@ layout: default
 ---
 
 <div class="container">
+  <h1>{{ page.title}}</h1>
   {% include page-intro.html %} {{ content }}
   <section class="portfolio__grid">
-    {% for porfolio_item in site.pages %} {% if porfolio_item.layout == 'porfolio_item' %}
-
-    <a href="{{porfolio_item.link}}">
-      <div>
-        <img src="{{porfolio_item.image}}" />
-        <h1>{{porfolio_item.title}}</h1>
-        <p>{{porfolio_item.categories}}</p>
-        <p>{{porfolio_item.details}}</p>
-      </div>
+    {% for portfolio_item in site.pages %} {% if portfolio_item.layout ==
+    'portfolio_item' %}
+    <a target="_blank" href="{{portfolio_item.link}}">
+      <article class="item">
+        <h2>{{portfolio_item.title}}</h2>
+        <p>{{portfolio_item.categories}}</p>
+        <img src="{{portfolio_item.image}}" />
+      </article>
     </a>
-    {% endfor %}
+    {% endif %} {% endfor %}
   </section>
 </div>

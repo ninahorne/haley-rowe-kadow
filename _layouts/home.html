@@ -3,15 +3,18 @@ layout: default
 ---
 
 <div class="container">
-  <div class="home__row">
-    <div>
-      <img src="/assets/img/uploads/headshot.png">
+  <div class="content">
+    <div class="home__row">
+      <div>
+        <img src="/assets/img/uploads/headshot.png">
+      </div>
+      <div class="home__intro">
+        <p>
+          {{page.intro_paragraph}}
+        </p>
+      </div>
     </div>
-    <div class="home__intro">
-      <p>
-        {{page.intro_paragraph}}
-      </p>
-    </div>
+    {{ content }}
   </div>
-  {{ content }}
+
 </div>

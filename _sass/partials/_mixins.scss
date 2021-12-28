@@ -21,6 +21,10 @@
 @mixin container() {
   max-width: $container-width;
   margin: 0 auto;
+  padding: 4rem 0;
+  @media screen and (max-width: $screen-sm-min) {
+    padding: 0rem 2rem;
+  }
 }
 
 @mixin center-vertically() {

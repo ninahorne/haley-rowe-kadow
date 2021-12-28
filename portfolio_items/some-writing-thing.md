@@ -1,4 +1,5 @@
 ---
+layout: portfolio_item
 title: Some writing thing
 image: /assets/img/uploads/lily-banse-yhswy6uqvk-unsplash.jpg
 link: https://bedbathandbeyond.com

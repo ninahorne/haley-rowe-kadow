@@ -39,14 +39,14 @@ collections: # A list of collections the CMS should be able to edit
     create: false
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Layout", name: "layout", widget: "hid√den", default: "page"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Meta Description", name: "meta_description", widget: "string", required: false}
       - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-    # Portfolio Item
+  # Portfolio Items
   - name: "portfolio_item"
     label: "Portfolio Item"
     folder: "portfolio_items"
@@ -60,3 +60,4 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Link", name: "link", widget: "string", }
       - {label: "Categories", name: "categories", widget: "string", required: false}
       - {label: "Details", name: "details", widget: "markdown", required: false}
+

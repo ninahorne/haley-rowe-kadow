@@ -2,10 +2,11 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<div class="container">
+    <div class="content">
+        <h2>{{ page.title }}</h2>
 
-{% include page-intro.html %}
+        {% include page-intro.html %} {{ content }}
+    </div>
 
-{{ content }}
-
-{% include contact-form.html %}
+</div>

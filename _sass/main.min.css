@@ -645,7 +645,6 @@ header nav ul li a:visited {
 .home__row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: calc(100vh - 200px);
   align-items: center;
 }
 @media screen and (max-width: 768px) {
@@ -679,10 +678,10 @@ header nav ul li a:visited {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: white;
+  transition: transform 0.3s ease-in-out;
 }
 .blog__grid > div:hover {
   transform: scale(1.01);
-  transition: transform 0.3s ease-in-out;
 }
 .blog__grid > div a {
   text-decoration: none;
@@ -729,7 +728,52 @@ footer .footer__social .social__icon img {
   height: 20px;
 }
 
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 3rem;
+  padding: 4rem 0;
+}
+@media screen and (max-width: 768px) {
+  .portfolio__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio__grid a {
+  color: black;
+}
+.portfolio__grid .item {
+  padding: 2rem;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0px 0px black;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+}
+.portfolio__grid .item:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.portfolio__grid .item h2 {
+  padding-bottom: 0.5rem;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 4rem 0;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0rem 2rem;
+  }
+}
+
+.content {
+  min-height: calc(100vh - 300px);
 }/*# sourceMappingURL=main.min.css.map */
